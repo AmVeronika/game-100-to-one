@@ -90,13 +90,60 @@
     font-size: 30px;
     line-height: 36px;
     color: rgb(12, 85, 43);
+    padding-top: 15px;
+    margin-bottom: 25px;
     
 }
-
-
-
 .main__points-ball {
     font-weight: bold;
     font-size: 45px;
-    padding-top: 40px;
+    padding: 40px;
+}
+
+
+//Блок с ответами
+
+.main__answer-riddle {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between
+    ;
+
+}
+.main__answer-mistake {
+    display: flex;
+    flex-direction: column;
+}
+.mistake-picture {
+    ellipse {
+        fill: #fc6f11;
+    }
+    
+}
+
+.mistake-window {
+    text-align: center;
+    
+}
+.window3 {
+
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 85px;
+    line-height: 90px;
+    color: #fc6f11;
+    width: 140px;
+    height: 100px;
+    background: #bf0000;
+    border: 2px solid #fc6f11;
+}
+.mistake-window {
+    text-align: center;
+    padding-left: 5px;
+}
+.mistake-picture {
+width: 150px;
+}
+.mistake-icon {
+    width: 100%;
 }
