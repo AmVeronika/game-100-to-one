@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Sports-World";
+  src: url("../fonts/SportsWorld.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header {
+  background: #313138;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header__container {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ffffff;
+  position: relative;
+}
+
+.header__plane {
+  font-size: 100px;
+  font-weight: 600;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  padding-bottom: 10px;
+}
+
+.header__plane .header__icon {
+  max-width: 100%;
+}
+
+.header__title {
+  font-family: "Sports-World";
+  font-size: 170px;
+  line-height: 140px;
+  font-weight: 100;
+}
+
+.header__icon {
+  width: 215px;
+}
+
+.header__picture {
+  position: absolute;
+  bottom: -108px;
+  right: 114px;
+}
+
+.main {
+  background: #7d9ba8;
+}
+
+.main__points {
+  width: 140px;
+  background: white;
+  border: 1px solid black;
+}
+
+.main__container {
+  padding-top: 150px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 22px;
+}
+
+.main__tablo {
+  width: 700px;
+  background: #82f6fa;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main__the-game {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: #1818dd;
+}
+
+.main__question {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #0c552b;
+}
+
+.main__points-ball {
+  font-weight: bold;
+  font-size: 45px;
+  padding-top: 40px;
+}
