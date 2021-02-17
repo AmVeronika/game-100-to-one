@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -86,6 +87,20 @@ h6 {
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Ranchers-Regular";
+  src: url("../fonts/Ranchers-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url("../fonts/Pacifico-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 .header {
   background: #313138;
 }
@@ -97,18 +112,17 @@ h6 {
 
 .header__container {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #ffffff;
   position: relative;
 }
 
 .header__plane {
-  font-size: 100px;
-  font-weight: 600;
+  font-size: 70px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .header__plane .header__icon {
@@ -117,33 +131,27 @@ h6 {
 
 .header__title {
   font-family: "Sports-World";
-  font-size: 170px;
-  line-height: 140px;
+  font-size: 155px;
+  line-height: 130px;
   font-weight: 100;
 }
 
 .header__icon {
-  width: 215px;
+  width: 178px;
 }
 
 .header__picture {
   position: absolute;
-  bottom: -108px;
-  right: 114px;
+  bottom: -88px;
+  right: 170px;
 }
 
 .main {
-  background: #7d9ba8;
-}
-
-.main__points {
-  width: 140px;
-  background: white;
-  border: 1px solid black;
+  background: url(../backgrond/light-veneer/light-veneer.png);
 }
 
 .main__container {
-  padding-top: 150px;
+  padding-top: 70px;
   text-align: center;
   display: -ms-grid;
   display: grid;
@@ -156,33 +164,40 @@ h6 {
 
 .main__tablo {
   width: 700px;
-  background: #82f6fa;
+  background: url(../backgrond/cloudy-day/cloudy-day.png);
   -ms-flex-line-pack: center;
       align-content: center;
+  border: 2px solid #cae4f0;
+  border-radius: 5px;
+  padding: 15px;
 }
 
 .main__the-game {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-family: "Pacifico-Regular";
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #1818dd;
 }
 
 .main__question {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #0c552b;
-  padding-top: 15px;
-  margin-bottom: 25px;
+  padding-top: 20px;
 }
 
 .main__points-ball {
+  font-family: "Ranchers-Regular";
   font-weight: bold;
+  width: 140px;
   font-size: 45px;
-  padding: 40px;
+  background: url(../backgrond/brickwall/brickwall.png);
+  border: 2px solid #e0d8d8;
+  border-radius: 5px;
+  padding: 40px 18px;
 }
 
 .main__answer-riddle {
@@ -205,8 +220,8 @@ h6 {
           flex-direction: column;
 }
 
-#svg_3 {
-  fill: yellow;
+.mistake-picture ellipse {
+  fill: #fc6f11;
 }
 
 .mistake-window {
@@ -214,8 +229,8 @@ h6 {
 }
 
 .window3 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 500;
+  font-family: "Ranchers-Regular";
+  font-weight: 100;
   font-size: 85px;
   line-height: 90px;
   color: #fc6f11;
@@ -223,6 +238,7 @@ h6 {
   height: 100px;
   background: #bf0000;
   border: 2px solid #fc6f11;
+  border-radius: 5px;
 }
 
 .mistake-window {
@@ -230,6 +246,122 @@ h6 {
   padding-left: 5px;
 }
 
-.mistake-icon {
+.mistake-picture {
   width: 150px;
+}
+
+.mistake-icon {
+  width: 100%;
+  cursor: pointer;
+}
+
+svg .layer ellipse {
+  fill: #bf0000;
+}
+
+.mistake-block {
+  background: url(../backgrond/escheresque_ste/escheresque_ste.png);
+  margin-bottom: 10px;
+  width: 650px;
+  height: 100px;
+  text-align: center;
+}
+
+.mistake-block p {
+  padding-top: 40px;
+  padding-left: 20px;
+  color: #3849e7;
+  font-family: "Ranchers-Regular";
+  font-size: 60px;
+  line-height: 20px;
+}
+
+svg .layer ellipse:hover {
+  fill: #e7d912;
+}
+
+.footer {
+  background: #313138;
+  height: 300px;
+}
+
+.footer__button {
+  text-align: center;
+  padding: 20px 0;
+  background: url(../backgrond/cloudy-day/cloudy-day.png);
+  border-radius: 25px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.footer__button a {
+  padding: 11px 95px;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #0c552b;
+}
+
+.button-footer {
+  padding-top: 20px;
+}
+
+.mistake-block-front {
+  display: none;
+  background: url(../backgrond/pool_table/pool_table/pool_table.png);
+  margin-bottom: 10px;
+  width: 650px;
+  height: 100px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.mistake-block-front p, .mistake-block-front pre {
+  padding-top: 40px;
+  padding-left: 20px;
+  color: #ffffff;
+  font-family: "Ranchers-Regular";
+  font-size: 40px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.main__mistake-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.main__mistake-block .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.main__mistake-block .card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }

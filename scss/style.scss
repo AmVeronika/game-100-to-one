@@ -6,7 +6,23 @@
     font-style: normal; 
     font-weight: normal; 
     }
+@font-face {
+    font-family: "Ranchers-Regular"; 
+    src: url("../fonts/Ranchers-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+@font-face {
+    font-family: "Pacifico-Regular"; 
+    src: url("../fonts/Pacifico-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
 
 .header {
     background: rgb(49, 49, 56);
@@ -17,16 +33,15 @@
 }
 .header__container {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #ffffff;
     position: relative;
 }
 .header__plane {
-    font-size: 100px;
-    font-weight: 600;
+    font-size: 70px;
     transform: rotate(270deg);
-    padding-bottom: 10px;
+    padding-left: 10px;
     
    .header__icon {
        max-width: 100%;
@@ -34,35 +49,34 @@
 }
 .header__title {
     font-family: "Sports-World";
-    font-size: 170px;
-    line-height: 140px;
+    font-size: 155px;
+    line-height: 130px;
     font-weight: 100;
 
 }
 .header__icon {
-    width: 215px;
+    width: 178px;
 }
 .header__picture {
     position: absolute;
-    bottom: -108px;
-    right: 114px;
+    bottom: -88px;
+    right: 170px;
 }
 
 
 //main
 
 .main {
-    background: rgb(125, 155, 168);
+    background: url(../backgrond/light-veneer/light-veneer.png);
 }
 
 .main__points {
-    width: 140px;
-    background: white;
-    border: 1px solid black;
+
 }
 
+
 .main__container {
-    padding-top: 150px;
+    padding-top: 70px;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -72,32 +86,40 @@
 
 .main__tablo {
     width: 700px;
-    background: rgb(130, 246, 250);
+    background:url(../backgrond/cloudy-day/cloudy-day.png);
     align-content: center;
+    border: 2px solid #cae4f0;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 .main__the-game {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
+    font-family: "Pacifico-Regular"; 
+    font-weight: 500;
     font-size: 45px;
     line-height: 45px;
     color: rgb(24, 24, 221);
 }
 
 .main__question {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     color: rgb(12, 85, 43);
-    padding-top: 15px;
-    margin-bottom: 25px;
+    padding-top: 20px;
+    
     
 }
 .main__points-ball {
+    font-family: "Ranchers-Regular";
     font-weight: bold;
+    width: 140px;
     font-size: 45px;
-    padding: 40px;
+    background: url(../backgrond/brickwall/brickwall.png);
+    border: 2px solid rgb(224, 216, 216);
+    border-radius: 5px;
+    padding: 40px 18px;
 }
 
 
@@ -127,8 +149,8 @@
 }
 .window3 {
 
-    font-family: 'Roboto Slab', serif;
-    font-weight: 500;
+    font-family: "Ranchers-Regular";
+    font-weight: 100;
     font-size: 85px;
     line-height: 90px;
     color: #fc6f11;
@@ -136,6 +158,7 @@
     height: 100px;
     background: #bf0000;
     border: 2px solid #fc6f11;
+    border-radius: 5px;
 }
 .mistake-window {
     text-align: center;
@@ -146,4 +169,111 @@ width: 150px;
 }
 .mistake-icon {
     width: 100%;
+    cursor: pointer;
 }
+
+svg .layer ellipse {
+    fill:#bf0000; 
+}
+
+
+.mistake-block {
+    background: url(../backgrond/escheresque_ste/escheresque_ste.png);
+    margin-bottom: 10px;
+    width: 650px;
+    height: 100px;
+    text-align: center;
+
+        p {
+            padding-top: 40px;
+            padding-left: 20px;
+            color: #3849e7;
+            font-family: "Ranchers-Regular";
+            font-size: 60px;
+            line-height: 20px;
+            
+    }
+}
+
+
+    svg .layer ellipse:hover {
+        fill:rgb(231, 217, 18); 
+
+    }
+
+
+
+// footer
+
+.footer {
+    background: rgb(49, 49, 56);
+    height: 300px;
+}
+
+.footer__button {
+    text-align: center;
+    padding:20px 0;
+    background:url(../backgrond/cloudy-day/cloudy-day.png);
+    border-radius: 25px;
+    width: 300px;
+    margin: 0 auto;
+     a {
+        padding: 11px 95px;
+        font-family: 'Balsamiq Sans', cursive;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #0c552b;
+         
+     }
+}
+
+.button-footer {
+    padding-top: 20px;
+}
+
+
+//Блоки с ответами  
+
+.mistake-block-front {
+    display: none;
+    background: url(../backgrond/pool_table/pool_table/pool_table.png);
+    margin-bottom: 10px;
+    width: 650px;
+    height: 100px;
+    transform: rotateY( 180deg );
+            p, pre {
+            padding-top: 40px;
+            padding-left: 20px;
+            color: #ffffff;
+            font-family: "Ranchers-Regular";
+            font-size: 40px;
+            line-height: 15px;
+            text-transform: uppercase;
+            
+    }
+}
+.main__mistake-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    cursor: pointer;
+    perspective: 600px;
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+        .card__face {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden; 
+        }
+      
+}
+.card.is-flipped {
+    transform: rotateY(180deg);
+  }
