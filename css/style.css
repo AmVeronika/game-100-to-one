@@ -181,7 +181,7 @@ h6 {
 }
 
 .main__question {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -220,10 +220,6 @@ h6 {
           flex-direction: column;
 }
 
-.mistake-picture ellipse {
-  fill: #fc6f11;
-}
-
 .mistake-window {
   text-align: center;
 }
@@ -255,12 +251,12 @@ h6 {
   cursor: pointer;
 }
 
-svg .layer ellipse {
+.mistakeLeft,
+.mistakeRight {
   fill: #bf0000;
 }
 
 .mistake-block {
-  background: url(../backgrond/escheresque_ste/escheresque_ste.png);
   margin-bottom: 10px;
   width: 650px;
   height: 100px;
@@ -268,15 +264,15 @@ svg .layer ellipse {
 }
 
 .mistake-block p {
-  padding-top: 40px;
+  padding-top: 8px;
   padding-left: 20px;
-  color: #3849e7;
+  color: #c0c5f7;
   font-family: "Ranchers-Regular";
-  font-size: 60px;
-  line-height: 20px;
+  font-size: 30px;
+  line-height: 42px;
 }
 
-svg .layer ellipse:hover {
+.mistake_yellow {
   fill: #e7d912;
 }
 
@@ -296,7 +292,7 @@ svg .layer ellipse:hover {
 
 .footer__button a {
   padding: 11px 95px;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -308,23 +304,43 @@ svg .layer ellipse:hover {
 }
 
 .mistake-block-front {
-  display: none;
+  display: block;
   background: url(../backgrond/pool_table/pool_table/pool_table.png);
   margin-bottom: 10px;
   width: 650px;
   height: 100px;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.mistake-block-front p, .mistake-block-front pre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 40px;
   padding-left: 20px;
   color: #ffffff;
   font-family: "Ranchers-Regular";
-  font-size: 40px;
+  font-size: 15px;
   line-height: 15px;
+  text-align: left;
+}
+
+span {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.mistake-block-back {
+  z-index: 10;
+  background: url(../backgrond/escheresque_ste/escheresque_ste.png);
+  text-align: center;
+}
+
+p.mistake-block-front.card__face {
   text-transform: uppercase;
+}
+
+.mistake-back {
+  z-index: 0;
 }
 
 .main__mistake-block {
@@ -337,31 +353,16 @@ svg .layer ellipse:hover {
           flex-direction: column;
   margin-bottom: 10px;
   cursor: pointer;
-  -webkit-perspective: 600px;
-          perspective: 600px;
 }
 
 .main__mistake-block .card {
   width: 100%;
   height: 100%;
   position: relative;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 .main__mistake-block .card__face {
   position: absolute;
   height: 100%;
   width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.card.is-flipped {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
 }
