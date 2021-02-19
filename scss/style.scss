@@ -23,6 +23,25 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
 
+body,
+html {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #000;
+}
+
+canvas {
+   cursor: crosshair;
+   display: block;
+}
+
 .header {
    background: rgb(49, 49, 56);
 }
@@ -65,9 +84,8 @@
 
 .main {
    background: url(../backgrond/light-veneer/light-veneer.png);
-}
-
-.main__points {
+   background-size: cover;
+   height: 100%;
 }
 
 .main__container {
@@ -164,14 +182,14 @@
    width: 650px;
    height: 100px;
    text-align: center;
-
-   p {
-      padding-top: 8px;
-      padding-left: 20px;
-      color: #c0c5f7;
+   .mistake-block-back,
+   span {
       font-family: "Ranchers-Regular";
+   }
+   p {
+      color: #c0c5f7;
       font-size: 30px;
-      line-height: 42px;
+      line-height: 99px;
    }
 }
 
@@ -183,7 +201,7 @@
 
 .footer {
    background: rgb(49, 49, 56);
-   height: 300px;
+   height: 200px;
 }
 
 .footer__button {
@@ -204,36 +222,29 @@
 }
 
 .button-footer {
-   padding-top: 20px;
+   padding-top: 40px;
 }
 
 //Блоки с ответами
 
 .mistake-block-front {
    display: block;
+   z-index: 8;
    background: url(../backgrond/pool_table/pool_table/pool_table.png);
    margin-bottom: 10px;
    width: 650px;
    height: 100px;
    display: flex;
    justify-content: space-between;
-     
-   
-      padding-top: 40px;
-      padding-left: 20px;
-      color: #ffffff;
-      font-family: "Ranchers-Regular";
-      font-size: 15px;
-      line-height: 15px;
-      text-align: left;}
-      span {
-         text-align: right;
-         padding-right: 30px;
-         
+   padding-left: 20px;
+   color: #ffffff;
+   font-size: 15px;
+   line-height: 15px;
+   text-align: left;
 }
-
-.card__face {
-   
+span {
+   text-align: right;
+   padding-right: 30px;
 }
 
 .mistake-block-back {
@@ -246,7 +257,7 @@ p.mistake-block-front.card__face {
 }
 
 .mistake-back {
-   z-index: 0;
+   opacity: 0;
 }
 
 .main__mistake-block {
@@ -265,3 +276,11 @@ p.mistake-block-front.card__face {
       width: 100%;
    }
 }
+
+/*
+
+BIG GAME
+
+*/
+
+@import "_big-game";
